@@ -1,0 +1,48 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block
+content %}
+<form method="POST">
+  <h3 align="cSkriv in">Skapa konto</h3>
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input
+      type="email"
+      class="form-control"
+      id="email"
+      name="email"
+      placeholder="Skriv in email"
+    />
+  </div>
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <input
+      type="text"
+      class="form-control"
+      id="firstName"
+      name="firstName"
+      placeholder="Skriv in första namn"
+    />
+  </div>
+  <div class="form-group">
+    <label for="lösenord1">lösenord</label>
+    <input
+      type="lösenord"
+      class="form-control"
+      id="lösenord1"
+      name="lösenord1"
+      placeholder="Skriv in lösenord"
+    />
+  </div>
+  <div class="form-group">
+    <label for="lösenord2">lösenord (Confirm)</label>
+    <input
+      type="lösenord"
+      class="form-control"
+      id="lösenord2"
+      name="lösenord2"
+      placeholder="Confirm lösenord"
+    />
+  </div>
+  <br />
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+{% endblock %}
